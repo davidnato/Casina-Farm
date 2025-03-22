@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Our Story - Casina Farms</title>
+    <style>
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    }
+    a {
+    text-decoration: none;
+    color: white;
+    }
+
+    header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1e6032;
+    }
+
+    .logo {
+    width: 75px;
+    }
+
+    nav ol li{
+    display: inline;
+    padding: 1em;
+    }
+
+    nav ol li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 1em;
+    }
+
+    nav ol li a:hover::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 2px;
+        background-color: #fbaf41;
+    }
+
+    nav ol li a:active {
+        background-color: #fbaf41;
+    }
+    .btn {
+        background-color: #fbaf41;
+        border: none;
+        width: 9em;
+        height: 3em;
+        border-radius: 2em;
+        font-weight: bold;
+        color: #1e6032;
+        transition: .3s;
+        display: inline;
+    }
+    .btn:hover {
+        box-shadow: 3px 3px rgba(0,0,0,.2);
+        cursor: pointer;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .magazine-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .magazine-header h1 {
+        font-size: 3.5em;
+        margin-bottom: 10px;
+        color: #2c3e50;
+    }
+
+    .magazine-header h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #27ae60;
+    }
+
+    .header-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .intro-grid, .mission-grid, .seed-grid, .sdg-grid, .today-grid, .imagine-grid {
+        display: grid;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .seed-grid {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+    }
+
+    .sdg-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .today-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .imagine-grid {
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 2em;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #27ae60;
+    }
+
+    h4 {
+        font-size: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #2c3e50;
+    }
+
+    .sdg-item {
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="pic/logo.png" alt="Casina Farms" srcset="" class="logo">
+        <nav>
+          <ol class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+            <li><a href="our_story.html">OUR STORY</a></li>
+            <li><a href="http://">CONTACT US</a></li>
+          </ol>
+        </nav>
+        <button class="btn">BUY NOW</button>
+      </header>
+    <div class="container">
+        <div class="magazine-header">
+            <h1>Our Story</h1>
+            <h2>Casina Farms</h2>
+            <img src="images/header.png" alt="Casina Farms Header" class="header-image">
+        </div>
+
+        <section class="intro">
+            <div class="intro-grid">
+                <img src="images/intro-right.webp" alt="Sustainable Agriculture" class="intro-image-left">
+                <p>We’re a pioneering social enterprise that integrates sustainable agriculture, coastal ecosystem restoration, and community development to create thriving, resilient coastal communities. By supporting smallholder farmers, preserving biodiversity, promoting fair trade practices, fostering climate-resilient agriculture, and improving access to fresh, locally grown produce, we’re cultivating a future where people, planet, and prosperity thrive together.</p>
+                <img src="images/intro-right.webp" alt="Community Development" class="intro-image-right">
+            </div>
+        </section>
+
+        <section class="mission">
+            <h3>Casina Farms: Building Resilience on the Kenyan Coast</h3>
+            <div class="mission-grid">
+                <img src="images/mission-main.png" alt="Building Resilience" class="mission-image-main">
+                <p>Our mission is to restore ecosystems through sustainable practices, enhancing food security and economic prosperity for smallholder farmers in coastal Kenya while fostering a flourishing natural environment.</p>
+            </div>
+        </section>
+
+        <section class="from-seed-to-sustenance">
+            <h3>From Seed to Sustenance</h3>
+            <div class="seed-grid">
+                <img src="images/seed-1.png" alt="Seed to Sustenance 1" class="seed-image-1">
+                <p>Having lived on the Kenyan coast, we intimately understood the challenges we faced. Our families fought tirelessly to survive, working hard to put food on the table. Yet amidst these difficulties, we were blessed with a strong sense of community and a profound connection to the natural landscape.</p>
+            </div>
+        </section>
+
+        <section class="sdgs">
+            <h3>Our Contribution to Sustainable Development Goals (SDGs)</h3>
+            <div class="sdg-grid">
+                <div class="sdg-item">
+                    <img src="images/seed-1.png" alt="No Poverty" class="sdg-image">
+                    <h4>SDG 1: No Poverty</h4>
+                    <p>We empower smallholder farmers to break the cycle of poverty through sustainable practices and fair trade.</p>
+                </div>
+                <div class="sdg-item">
+                    <img src="images/seed-1.png" alt="Climate Action" class="sdg-image">
+                    <h4>SDG 13: Climate Action</h4>
+                    <p>We promote climate-resilient agriculture to combat the effects of climate change.</p>
+                </div>
+                <div class="sdg-item">
+                    <img src="images/seed-1.png" alt="Life Below Water, Life on Land" class="sdg-image">
+                    <h4>SDG 14-15: Life Below Water, Life on Land</h4>
+                    <p>We restore coastal ecosystems to protect marine and terrestrial biodiversity.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="today">
+            <h3>Today, Our Dream is Sprouting into Reality</h3>
+            <div class="today-grid">
+                <img src="images/seed-1.png" alt="Dream Sprouting into Reality" class="today-image-main">
+                <p>Today, our dream is sprouting into reality. We’re nurturing a movement that’s revitalising ecosystems and revitalising lives. By empowering smallholder farmers and coastal communities with sustainable practices, we’re witnessing a transformation that’s nothing short of miraculous.</p>
+            </div>
+        </section>
+
+        <section class="imagine">
+            <h3>Imagine It: A Flourishing Ecosystem</h3>
+            <div class="imagine-grid">
+                <img src="images/seed-1.png" alt="Flourishing Ecosystem 1" class="imagine-image-1">
+                <p>Imagine it: a flourishing ecosystem, where every plant and creature thrives in harmony, from the roots of the mangroves to the depths of the ocean. Where the soil is rich and fertile, the water is pure and abundant, and the coral reefs are vibrant and resilient.</p>
+            </div>
+        </section>
+    </div>
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- About Section -->
+        <div class="footer-section about">
+            <h2>Casina Farms</h2>
+            <p>At Casina Farms, we're on a mission to restore ecosystems through sustainable practices, cultivating food security and economic prosperity for smallholder farmers in coastal Kenya, while fostering a flourishing natural environment.</p>
+        </div>
+  
+        <!-- General Pages -->
+        <div class="footer-section">
+            <h3>General Pages</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>📞 Phone: <a href="tel:+254726245357">+254 726 245 357</a></p>
+            <p>✉️ Email: <a href="mailto:info@casinafarms.com">info@casinafarms.com</a></p>
+        </div>
+    </div>
+  
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Casina Farms | All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

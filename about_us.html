@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .main-page { 
+      height: 100vh; 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+    }
+    .title { 
+      font-size: 3rem; 
+      margin-bottom: 20px; 
+    }
+    .card-container { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+      gap: 20px; 
+      max-width: 1000px; 
+      width: 90%; 
+    }
+    .card { 
+      background-color: white; 
+      padding: 20px; 
+      border-radius: 15px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+      text-align: center; 
+    }
+    .card h2 { 
+      margin-bottom: 10px; 
+      font-size: 1.5rem; 
+    }
+    .card p { 
+      color: #555; 
+    }
+    .stat-page { 
+      height: 100vh; 
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pic/hero.png") ;
+      background-size: cover;
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      text-align: center;
+      color: white;
+    }
+    .title { 
+      font-size: 3rem; 
+      margin-bottom: 20px; 
+      font-weight: bold;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .stats-container { 
+      display: flex; 
+      justify-content: center; 
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .stat { 
+      text-align: center;
+    }
+    .number { 
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .label { 
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  </style>
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>About Us - Hero Section</title>
+</head>
+<body>
+    <header>
+        <img src="pic/logo.png" alt="Casina Farms" srcset="" class="logo">
+        <nav>
+          <ol class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+            <li><a href="our_story.html">OUR STORY</a></li>
+            <li><a href="http://">CONTACT US</a></li>
+          </ol>
+        </nav>
+        <button class="btn">DONATE</button>
+      </header>
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Join Us in Transforming Agriculture</h1>
+            <p>We are more than just farmers we are change makers. Join us in empowering smallholder farmers and creating a sustainable future.</p>
+            <button class="btn"><a href="#">Get Involved Today</a></button>
+        </div>
+    </section>
+    <div class="main-page">
+        <h1 class="title">Main Page</h1>
+        <div class="card-container">
+          <div class="card">
+            <h2>Our Work</h2>
+            <p>By supporting smallholder farmers, preserving biodiversity, promoting fair trade practices, fostering climate-resilient agriculture, and improving access to fresh, locally grown produce, we’re cultivating a future where people, planet, and prosperity thrive together.</p>
+          </div>
+          <div class="card">
+            <h2>Our mission</h2>
+            <p>At Casina Farms, we’re on a mission to restore ecosystems through sustainable practices, cultivating food security and economic prosperity for smallholder farmers in coastal Kenya, while fostering a flourishing natural environment.</p>
+          </div>
+          <div class="card">
+            <h2>Our Vision</h2>
+            <p>To lead a global movement where smallholder coastal farming communities thrive, supported by healthy ecosystems, prosperous farmers, vibrant local economies, and sustainable practices that guarantee food security for generations to come.</p>
+          </div>
+        </div>
+      </div>
+      <div class="stat-page">
+        <p class="subtitle">Meet us better</p>
+        <h1 class="title">Casina Farms Impact</h1>
+        <div class="stats-container">
+          <div class="stat">
+            <div class="number" id="households">0</div>
+            <div class="label">households in coastal Kenya</div>
+          </div>
+          <div class="stat">
+            <div class="number" id="beehives">0</div>
+            <div class="label">beehives</div>
+          </div>
+          <div class="stat">
+            <div class="number" id="haRehab">0</div>
+            <div class="label">Ha rehabilitated</div>
+          </div>
+          <div class="stat">
+            <div class="number" id="satisfaction">0%</div>
+            <div class="label">Satisfied Customers</div>
+          </div>
+        </div>
+      </div>
+  <script>
+    function animateValue(id, start, end, duration) {
+      let range = end - start;
+      let current = start;
+      let increment = (end - start) / (duration / 50);
+      let obj = document.getElementById(id);
+      let timer = setInterval(function() {
+        current += increment;
+        if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
+          current = end;
+          clearInterval(timer);
+        }
+        obj.textContent = current.toFixed(1) + (id === 'satisfaction' ? '%' : '');
+      }, 50);
+    }
+
+    animateValue('households', 0, 50, 2000);
+    animateValue('beehives', 0, 10, 2000);
+    animateValue('haRehab', 0, 40, 2000);
+    animateValue('satisfaction', 0, 99.9, 2000);
+  </script>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- About Section -->
+        <div class="footer-section about">
+            <h2>Casina Farms</h2>
+            <p>At Casina Farms, we're on a mission to restore ecosystems through sustainable practices, cultivating food security and economic prosperity for smallholder farmers in coastal Kenya, while fostering a flourishing natural environment.</p>
+        </div>
+  
+        <!-- General Pages -->
+        <div class="footer-section">
+            <h3>General Pages</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>📞 Phone: <a href="tel:+254726245357">+254 726 245 357</a></p>
+            <p>✉️ Email: <a href="mailto:info@casinafarms.com">info@casinafarms.com</a></p>
+        </div>
+    </div>
+  
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Casina Farms | All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
