@@ -72,8 +72,10 @@ nav ol li a{
     display: inline;
   }
   .btn:hover {
-    box-shadow: 3px 3px rgba(0,0,0,.2);
     cursor: pointer;
+    background-color: #1e6032;
+    color: white;
+    border: 1px solid #fbaf41;
   }
   body, html {
     height: 100%;
@@ -364,7 +366,6 @@ a {
 }
 
 .hamburger {
-  display: none;
   flex-direction: column;
   cursor: pointer;
   padding: 10px;
